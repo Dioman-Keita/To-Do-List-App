@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #e0e0e0;
+    --primary-font: "Inter", sans-serif;
+    --primary-size: xxx-large;
+    --secondary-size: xx-large;
+    --tertiary-size: 20px;
+    --quaternary-size: 15px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+h1 {
+    text-align: center;
+    font-size: var(--primary-size);
+
+}
+form {
+    border: 1px solid var(--primary-color);
+    padding: 30px 10px 25px 20px;
+    margin-left: 37%;
+    width: 350px;
+    border-radius: 8px;
+}
+label {
+    font-size: var(--tertiary-size);
+}
+input, button {
+    border: 1px solid var(--primary-color);
+    padding: 2%;
+    width: 300px;
+    height: 25px;
+    margin: 5px;
+    font-size: var(--quaternary-size);
+}
+input::placeholder {
+    color: rgb(65, 62, 62);
+}
+button[type="submit"] {
+    width: 320px;
+    height: auto;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    font-style: italic;
+}
+.task-container {
+    margin-left: 37%;
+}
+.task-container-completed p, 
+.task-container-uncompleted p {
+    font-weight: bold;
+}
+.task-container-completed, .task-container-uncompleted {
+    border: 1px solid var(--primary-color);
+    margin-bottom: 15px;
+    width: 355px;
+    height: auto;
+    min-height: 90px;
+    padding: 0 0 0 30px;
+    border-radius: 8px;
+}
+ul li button {
+    padding: 0;
+    margin: 8px;
+    width: 100px;
+}
