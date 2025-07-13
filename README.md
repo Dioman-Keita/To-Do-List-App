@@ -42,9 +42,9 @@ Si l'application ne fonctionne plus correctement, essayez les étapes suivantes 
 - localStorage
 
 ## 📦 Aperçu
-![To-Do List App](./screenshots/image.png)
-![To-Do List App](./screenshots/image-2.png)
-![To-Do List App](./screenshots/image-3.png)
+![To-Do List App](src/screenshots/image.png)
+![To-Do List App](src/screenshots/image-2.png)
+![To-Do List App](src/screenshots/image-3.png)
 
 ## 📖 Utilisation
 Commencez par ouvrir le fichier `index.html` dans votre navigateur. Ensuite vous pourrez ajouter, supprimer et modifier le statut d'une tâche. Pour ce faire suivez les étapes suivantes :
