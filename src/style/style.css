@@ -1,5 +1,6 @@
 :root {
     --primary-color: #e0e0e0;
+    --secondary-color: #000;
     --primary-font: "Inter", sans-serif;
     --primary-size: xxx-large;
     --secondary-size: xx-large;
@@ -17,11 +18,14 @@ h1 {
     font-size: var(--primary-size);
 
 }
+h2 {
+    text-align: center;
+}
 form {
     border: 1px solid var(--primary-color);
     padding: 30px 10px 25px 20px;
-    margin-left: 37%;
-    width: 350px;
+    margin: 0 auto;
+    width: 30%;
     border-radius: 8px;
 }
 label {
@@ -30,16 +34,20 @@ label {
 input, button {
     border: 1px solid var(--primary-color);
     padding: 2%;
-    width: 300px;
+    width: 86%;
     height: 25px;
     margin: 5px;
     font-size: var(--quaternary-size);
+}
+button[type="submit"] {
+    box-sizing: border-box;
+    width: 40%
 }
 input::placeholder {
     color: rgb(65, 62, 62);
 }
 button[type="submit"] {
-    width: 320px;
+    width: 90%;
     height: auto;
 }
 ul {
@@ -60,14 +68,69 @@ li {
 .task-container-completed, .task-container-uncompleted {
     border: 1px solid var(--primary-color);
     margin-bottom: 15px;
-    width: 355px;
+    width: 30%;
     height: auto;
     min-height: 90px;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 3%;
     border-radius: 8px;
 }
-ul li button {
+li button {
     padding: 0;
-    margin: 8px;
-    width: 100px;
+    margin: 2.5%;
+    width: 25%;
+}
+
+/* Mobile */
+@media(max-width: 600px) and (orientation: portrait) {
+    form {
+        margin: 0 auto;
+    }
+    .task-container {
+        margin: 0 18%;
+    }
+    h2 {
+        text-align: center;
+    }
+    button[type="submit"] {
+        width: 90%;
+    }
+    input {
+        width: 86%;
+    }
+}
+
+/* Tablette */
+@media(min-width: 601px) and (max-width: 900px) {
+    form, .task-container {
+        margin: 0 18%;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+}
+
+/* Petit laptop / tablette large */
+@media (min-width: 901px) and (max-width: 1200px) {
+    form, .task-container {
+        margin: 0 30%;
+    }
+    .task-container {
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+/* Desktop */
+@media(min-width: 1201px){
+    form {
+        margin: 0 auto;
+    }
+    .task-container {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        gap: 20px;
+    }
 }
